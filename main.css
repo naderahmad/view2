@@ -22,15 +22,37 @@ a {
 body {
     background-color: #121113;
 }
-
-.blur-circle {
-    position: absolute;
+  
+  .background .pie {
     width: 100%;
-    height: 40%;
-    opacity: 70%;
-    filter: blur(50px);
-    z-index: 1;
-}
+    height: 25%;
+    border-top-left-radius: 100%;
+    position: absolute;
+    filter: blur(40px);
+  }
+  
+  .background .pie.wineberry {
+    transform: rotate(41deg);
+    background: radial-gradient(circle at bottom right, rgb(0, 0, 0), #FF4116 40%);
+  }
+  
+  .background .pie.cello {
+    transform: rotate(30deg);
+    background: radial-gradient(circle at bottom right, rgb(0, 0, 0), #ff613d 40%);
+  }
+  
+  .background .pie.greenpea {
+    transform: rotate(100deg);
+    background: radial-gradient(circle at bottom right, rgb(0, 0, 0), #b82200 40%);
+  }
+  
+  .background .pie.greenpea2 {
+    transform: rotate(140deg);
+  }
+  
+  .background .pie.astronaut {
+    background: radial-gradient(circle at bottom right, rgb(0, 0, 0), #ff5630 40%);
+  }
 
 /* Se aplican separaciones arriba y abajo del logo */
 .logo {
